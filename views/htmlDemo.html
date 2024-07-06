@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB700</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Jeffery Ho Kin Pou</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+
+
+
+                <!-- Start your code here -->
+
+                <section>
+                    <h2>Tables</h2>
+                    <table class="table" border="2" cellpadding="10">
+                        <caption>Table 1</caption>
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Vegetable</th>
+                                <th>Fruit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Carrot</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Tomato</td>
+                                <td colspan="2">Actually a fruit, but called vegetable</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Footer for Table 1</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table class="table" border="2" cellpadding="10">
+                        <caption>Table 2</caption>
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Category</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple</td>
+                                <td>Fruit</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Carrot</td>
+                                <td>Vegetable</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2">Tomato (Actually a fruit, but called vegetable)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Footer for Table 2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>This section demonstrates the use of HTML tables with various elements and properties.</p>
+                </section>
+
+                <section>
+                    <h2>Lists</h2>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Orange</li>
+                        <li>
+                            Banana with <b>nested ordered list</b>
+                            <ol>
+                                <li>Green Banana</li>
+                                <li>Ripe Banana</li>
+                                <li>Banana Chips</li>
+                            </ol>
+                        </li>
+                        <li>Grapes</li>
+                        <li>Strawberry</li>
+                    </ul>
+                    <p>This section demonstrates the use of HTML lists.</p>
+                </section>
+
+                <section>
+                    <h2>Images</h2>
+                    <div>
+                        <div>
+                            <img src="https://jbstechinfo.com/wp-content/uploads/2023/08/JavaScript-Symbol-1024x576.png"
+                                alt="JavaScrip Logo" style="width:500px;height:250px;">
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png"
+                                alt="HTML Logo" style="width:250px;height:250px;">
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png"
+                                alt="CSS Logo" style="width:180px;height:250px;">
+                        </div>
+                    </div>
+                    <p>This section demonstrates the use of HTML images.</p>
+                </section>
+
+                <section>
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3"
+                            type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>This section demonstrates the use of HTML5 audio player.</p>
+                </section>
+
+                <section>
+                    <h2>Video</h2>
+                    <video width="100%" controls>
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4"
+                            type="video/mp4">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg"
+                            type="video/ogg">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm"
+                            type="video/webm">
+                        Your browser does not support the video element.
+                    </video>
+                    <p>This section demonstrates the use of HTML5 video player.</p>
+                </section>
+
+
+                <!-- End your code here  -->
+
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
